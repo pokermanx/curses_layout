@@ -20,6 +20,12 @@ body {
 a {
   text-decoration: none;
   color: #78829d;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #9aa3ba;
 }
 
 input {
@@ -87,6 +93,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 80px;
 }
 
 .main-logo__text {
@@ -122,6 +129,12 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
+}
+
+.profile-container:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
 }
 
 .profile-name {
@@ -129,10 +142,20 @@ footer {
   margin: 13px;
 }
 
+.profile-name:hover {
+  color: #ffffff;
+}
+
 .dropdown-arrow {
   max-width: 100%;
   height: auto;
   margin-right: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .l-main-container {
@@ -184,6 +207,15 @@ footer {
   background-color: #f2795a;
   color: #ffffff;
   font-weight: bold;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.add-btn:hover {
+  color: #ffffff;
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+  zoom: 1.1;
 }
 
 .nav-menu {
@@ -195,7 +227,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 0 15px 10px;
+  margin-bottom: 15px;
 }
 
 .nav-menu-item {
@@ -205,11 +237,18 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 12px;
+  padding: 12px 12px 12px 22px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nav-menu-item__text {
   margin-left: 10px;
+}
+
+.nav-menu-item:hover {
+  background-color: #15a4fa;
+  color: #ffffff;
 }
 
 .marks-list {
@@ -293,7 +332,19 @@ footer {
 }
 
 .chart-tab {
-  margin: 15px 10px;
+  margin: 15px 5px;
+  padding: 5px 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 0px solid;
+  border-radius: 12px;
+}
+
+.chart-tab:hover {
+  border: 0px solid;
+  border-radius: 12px;
+  background-color: #97b3ce;
+  color: #ffffff;
 }
 
 .search-container {
@@ -341,10 +392,15 @@ footer {
   min-width: 200px;
 }
 
+.book-img {
+  cursor: pointer;
+}
+
 .book-name {
   font-size: 16px;
   color: #444c63;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .book-author {
@@ -373,6 +429,12 @@ footer {
   display: flex;
   height: 45px;
   width: 55px;
+  cursor: pointer;
+}
+
+.footer-btn:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 
 .footer-btn--help {

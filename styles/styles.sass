@@ -14,6 +14,10 @@ body
 a
     text-decoration: none
     color: #78829d
+    transition: 0.3s
+
+    &:hover
+        color: #9aa3ba
 
 input
     outline: none
@@ -63,6 +67,7 @@ footer
 
 .main-logo
     display: flex
+    padding-left: 80px
 
     &__text
         font-size: 12px
@@ -85,15 +90,24 @@ footer
     align-items: center
     background-color: #15a4fa
     display: flex
+    cursor: pointer
+    
+    &:hover
+        filter: brightness(105%)
     
 .profile-name
     color: #ffffff
     margin: 13px
 
+    &:hover
+        color: #ffffff
+
 .dropdown-arrow
     max-width: 100%
     height: auto
-    margin-right: 12px 
+    margin-right: 12px
+    display: flex
+    align-items: center
 
 .l-main-container
     display: flex
@@ -131,20 +145,31 @@ footer
     background-color: #f2795a;
     color: #ffffff
     font-weight: bold
+    transition: 0.1s
+
+    &:hover
+        color: #ffffff
+        filter: brightness(1.2)
+        zoom: 1.1
 
 .nav-menu
     width: 100%
     display: flex
     flex-direction: column
-    margin: 0 0 15px 10px 
+    margin-bottom: 15px 
 
 .nav-menu-item
     display: flex
     align-items: center
-    margin: 12px
+    padding: 12px 12px 12px 22px
+    transition: 0.5s
 
     &__text
-        margin-left: 10px    
+        margin-left: 10px   
+
+    &:hover
+        background-color: #15a4fa
+        color: #ffffff 
 
 .marks-list
     width: 100%
@@ -200,7 +225,17 @@ footer
     margin-left: 10px
 
 .chart-tab
-    margin: 15px 10px
+    margin: 15px 5px
+    padding: 5px 15px
+    transition: 0.3s
+    border: 0px solid 
+    border-radius: 12px
+
+    &:hover
+        border: 0px solid 
+        border-radius: 12px
+        background-color: #97b3ce
+        color: #ffffff
 
 .search-container
     display: flex
@@ -234,10 +269,14 @@ footer
     margin: 10px
     min-width: 200px
 
+.book-img
+    cursor: pointer
+
 .book-name
     font-size: 16px
     color: #444c63
     margin-top: 10px
+    cursor: pointer
 
 .book-author
     font-size: 12px
@@ -256,6 +295,10 @@ footer
     display: flex
     height: 45px
     width: 55px
+    cursor: pointer
+
+    &:hover
+        filter: brightness(110%)
 
     &--help
         background-color: #1f2637
